@@ -1,0 +1,47 @@
+broken code
+
+class character_creation():
+    name: str
+    race: str
+    age: str
+    selectedclass: str
+def character_creation():
+    name = input("Enter your name:")
+    race = input("Enter your last name:")
+    age = input("Age:")
+    selectedclass = input("Enter your address:") 
+    return name, race, age, selectedclass
+
+import random
+import time
+health = 20
+print('start')
+def claw():
+    rend = random.randint(1,4)
+    print(rend)
+claw()
+claw()
+claw()
+
+class Monster:
+	def __init__(self, attack, defense):
+		self.username = attack 
+		self.fullname = defense
+VampireLord = Monster(claw, 'def')
+print(VampireLord)
+print(VampireLord.username)
+print(VampireLord.fullname)
+print(type(VampireLord))
+
+def hi():
+	print(VampireLord)
+hi()
+def duel():
+    counter = 0
+    while counter < 1:
+        health-rend
+claw()
+claw()
+claw()
+        
+duel()
