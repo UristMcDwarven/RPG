@@ -33,6 +33,40 @@ print(VampireLord.username)
 print(VampireLord.fullname)
 print(type(VampireLord))
 
+health = 100
+vampirehealth = 100
+import random
+import time
+
+name = input('What is your name? ')
+print('your name is: ', name)
+
+race = input('What is your race? Human or Orc ')
+print('your race is: ', race)
+
+age = input('What is your age? ')
+print('your age is: ', age)
+
+gender = input('What is your gender? ')
+print('your gender is: ', gender)
+
+print(name, 'the', age, 'year old', gender, race)
+print('As you wake up from your slumber a vampire bursts out of the night and attacks')
+attack = input('Will you fight, yes or no?')
+if attack == 'yes':
+    time.sleep(2)
+    while health <= 100 and race == 'orc':
+        health -=random.randint(2,6)
+        print('Vampire attacks, ', 'hero health:', health)
+        time.sleep(1)
+        vampirehealth -= random.randint(1,9)
+        print('orc attacks,', 'vampire health:', vampirehealth)
+        if health < 1:
+            break
+        time.sleep(1)
+        if vampirehealth < 1:
+            break
+
 def hi():
 	print(VampireLord)
 hi()
